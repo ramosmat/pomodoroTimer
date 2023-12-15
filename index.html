@@ -4,37 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/fonts.css" />
+
     <title>Pomodoro Timer</title>
   </head>
   <body class="flex items-center justify-center w-screen h-screen">
     <section
-      class="flex w-4/5 max-w-6xl border border-solid rounded-md h-4/6 border-emerald-700"
+      class="flex justify-center w-4/5 max-w-6xl gap-10 border border-solid rounded-md border-emerald-700"
     >
       <section
-        class="border border-red-500 border-dotted my-24 mx-[40px] flex-col justify-center items-center"
+        id="timer"
+        class="flex-col items-center justify-center my-40 border border-red-500 border-dotted"
       >
-        <div id="buttons" class="flex gap-3">
-          <button class="border border-blue-600 border-solid rounded-md">
-            <p class="mx-4 my-2">Pomodoro</p>
+        <div id="buttons" class="flex justify-center gap-8 mt-2">
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>Pomodoro</p>
           </button>
-          <button class="border border-blue-600 border-solid rounded-md">
-            <p class="mx-4 my-2">5 minutos</p>
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>5 minutos</p>
           </button>
-          <button class="border border-blue-600 border-solid rounded-md">
-            <p class="mx-4 my-2">15 minutos</p>
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>15 minutos</p>
           </button>
         </div>
 
         <div
-          id="timer"
-          class="text-center border border-green-800 border-dashed my-7 text-8xl"
+          class="mx-24 font-semibold text-center border border-green-800 border-dashed my-14 text-8xl"
         >
           25:00
         </div>
 
         <div id="start" class="flex justify-center">
-          <button class="border border-blue-600 border-solid rounded-md">
-            <p class="mx-4 my-2">Começar</p>
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>Começar</p>
+          </button>
+        </div>
+      </section>
+
+      <div
+        class="h-auto my-4 border border-gray-500 border-solid opacity-50 rounded-xl"
+      ></div>
+
+      <section
+        id="tasks"
+        class="flex-col items-center justify-center my-40 border border-red-500 border-dotted"
+      >
+        <div class="flex justify-center gap-8 mt-2">
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>Pomodoro</p>
+          </button>
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>5 minutos</p>
+          </button>
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>15 minutos</p>
+          </button>
+        </div>
+
+        <div
+          class="mx-24 font-semibold text-center border border-green-800 border-dashed my-14 text-8xl"
+        >
+          25:00
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
+          >
+            <p>Começar</p>
           </button>
         </div>
       </section>
