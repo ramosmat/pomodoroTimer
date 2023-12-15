@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <title>Document</title>
+    <title>Pomodoro Timer</title>
   </head>
-  <body></body>
+  <body class="flex items-center justify-center w-screen h-screen">
+    <section
+      class="flex w-4/5 max-w-6xl border border-solid rounded-md h-4/6 border-emerald-700"
+    >
+      <section
+        class="border border-red-500 border-dotted my-24 mx-[40px] flex-col justify-center items-center"
+      >
+        <div id="buttons" class="flex gap-3">
+          <button class="border border-blue-600 border-solid rounded-md">
+            <p class="mx-4 my-2">Pomodoro</p>
+          </button>
+          <button class="border border-blue-600 border-solid rounded-md">
+            <p class="mx-4 my-2">5 minutos</p>
+          </button>
+          <button class="border border-blue-600 border-solid rounded-md">
+            <p class="mx-4 my-2">15 minutos</p>
+          </button>
+        </div>
+
+        <div
+          id="timer"
+          class="text-center border border-green-800 border-dashed my-7 text-8xl"
+        >
+          25:00
+        </div>
+
+        <div id="start" class="flex justify-center">
+          <button class="border border-blue-600 border-solid rounded-md">
+            <p class="mx-4 my-2">Começar</p>
+          </button>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
