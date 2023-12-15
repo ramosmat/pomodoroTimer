@@ -8,9 +8,11 @@
 
     <title>Pomodoro Timer</title>
   </head>
-  <body class="flex items-center justify-center w-screen h-screen">
+  <body
+    class="flex items-center justify-center w-screen h-screen bg-no-repeat bg-[url('/img/bg-lofi.png')] bg-cover bg-center"
+  >
     <section
-      class="flex justify-center w-4/5 max-w-6xl gap-10 border border-solid rounded-md border-emerald-700"
+      class="flex justify-center w-4/5 max-w-6xl gap-10 rounded-md bg-opacity-[0.65] bg-slate-400"
     >
       <section
         id="timer"
@@ -34,11 +36,7 @@
           </button>
         </div>
 
-        <div
-          class="mx-24 font-semibold text-center border border-green-800 border-dashed my-14 text-8xl"
-        >
-          25:00
-        </div>
+        <div class="mx-24 font-semibold text-center my-14 text-8xl">25:00</div>
 
         <div id="start" class="flex justify-center">
           <button
@@ -55,30 +53,19 @@
 
       <section
         id="tasks"
-        class="flex-col items-center justify-center my-40 border border-red-500 border-dotted"
+        class="flex-col items-center justify-center my-16 border border-blue-700 border-dashed"
       >
         <div class="flex justify-center gap-8 mt-2">
-          <button
-            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
-          >
-            <p>Pomodoro</p>
-          </button>
-          <button
-            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
-          >
-            <p>5 minutos</p>
-          </button>
-          <button
-            class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
-          >
-            <p>15 minutos</p>
-          </button>
+          <p class="text-5xl font-semibold">Tarefas</p>
         </div>
 
-        <div
-          class="mx-24 font-semibold text-center border border-green-800 border-dashed my-14 text-8xl"
-        >
-          25:00
+        <div class="text-center border border-orange-700 border-solid my-7">
+          <input
+            type="text"
+            name="task"
+            placeholder="Insira uma tarefa"
+            class="font-thin text-black"
+          />
         </div>
 
         <div class="flex justify-center">
