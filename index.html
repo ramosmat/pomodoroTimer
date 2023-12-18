@@ -68,6 +68,7 @@
           />
           <button
             id="add-task"
+            type="button"
             class="inline-block w-6 h-6 rounded-full bg-sky-400"
           >
             +
@@ -78,13 +79,14 @@
           class="mt-1 border border-gray-100 border-solid w-96 opacity-80 rounded-xl"
         ></div>
 
-        <section class="flex items-center justify-center">
-          <ol
-            id="tasks"
-            class="my-9 w-96 h-[400px] rounded-md bg-slate-300"
-          ></ol>
+        <section
+          class="flex flex-col my-9 h-[400px] rounded-md bg-slate-300 pt-4 px-10 w-96"
+        >
+          <ol id="tasks" class="flex flex-col list-decimal"></ol>
         </section>
       </section>
     </section>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
