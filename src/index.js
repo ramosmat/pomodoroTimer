@@ -14,14 +14,9 @@ function addTask() {
   //Se o input não estiver vazio, ele irá criar a tag "li" dentro do "ol"
   if (taskText != "") {
     const taskItem = document.createElement("li"); //Cria tag "li"
-    taskItem.className = "flex items-center gap-1 mt-2"; //Adicionando estilizações na "li" criada
+    taskItem.className = "flex items-center gap-1 pb-1 mt-2 border-b-2"; //Adicionando estilizações na "li" criada
 
     taskItem.innerText = taskText; //Coloca o que estiver no input dentro da tag "li" criada
-
-    //Adicionando div
-    const taskSeparator = document.createElement("div");
-    taskSeparator.className =
-      "block w-11/12 mt-1 border border-solid border-slate-400 delete-task";
 
     //Adicionando imagem da lixeira
     const trashIcon = document.createElement("img"); //Criando tag "img"
@@ -30,7 +25,6 @@ function addTask() {
     trashIcon.className =
       "inline-block w-[15px] h-[15px] delete-task delete-icon gap-1 cursor-pointer";
     taskItem.appendChild(trashIcon); //Insere icone de lixeira dentro da tag "li"
-    taskItem.appendChild(taskSeparator); //Insere "div" separadora dentro da tag "li"
 
     taskList.appendChild(taskItem); //Insere tarefa criada na tag "ol"
 
@@ -63,14 +57,9 @@ window.addEventListener("load", () => {
 
   savedTasks.forEach((taskText) => {
     const taskItem = document.createElement("li"); //Cria tag "li"
-    taskItem.className = "flex items-center gap-1 mt-2"; //Adicionando estilizações na "li" criada
+    taskItem.className = "flex items-center gap-1 pb-1 mt-2 border-b-2"; //Adicionando estilizações na "li" criada
 
     taskItem.innerText = taskText;
-
-    //Adicionando div
-    const taskSeparator = document.createElement("div");
-    taskSeparator.className =
-      "w-11/12 mt-1 border border-solid border-slate-400 delete-task";
 
     //Adicionando imagem da lixeira
     const trashIcon = document.createElement("img"); //Criando tag "img"
@@ -79,7 +68,6 @@ window.addEventListener("load", () => {
     trashIcon.className =
       "inline-block w-[15px] h-[15px] delete-task delete-icon gap-1 cursor-pointer";
     taskItem.appendChild(trashIcon); //Insere icone de lixeira dentro da tag "li"
-    taskItem.appendChild(taskSeparator); //Insere "div" separadora dentro da tag "li"
 
     taskList.appendChild(taskItem); //Insere tarefa criada na tag "ol"
   });
