@@ -12,13 +12,13 @@
     class="flex items-center justify-center w-screen h-screen bg-no-repeat bg-[url('/img/bg-lofi.png')] bg-cover bg-center"
   >
     <section
-      class="flex justify-center w-4/5 max-w-6xl gap-10 rounded-md bg-opacity-[0.65] bg-slate-400"
+      class="flex justify-center w-4/5 max-w-6xl gap-10 rounded-lg bg-opacity-[0.65] bg-slate-400"
     >
       <section
         id="timer"
-        class="flex-col items-center justify-center w-1/2 my-40 ml-10 border border-red-500 border-dotted"
+        class="flex-col items-center justify-center w-1/2 my-40 ml-10"
       >
-        <div id="buttons" class="flex justify-center gap-8 mt-2">
+        <div id="buttons" class="flex justify-center gap-8 mt-10">
           <button
             class="px-4 py-2 text-lg font-semibold text-white rounded-md bg-sky-400 hover:bg-sky-500"
           >
@@ -36,7 +36,7 @@
           </button>
         </div>
 
-        <div class="mx-24 font-semibold text-center my-14 text-8xl">25:00</div>
+        <div class="mx-24 my-20 font-semibold text-center text-8xl">25:00</div>
 
         <div id="start" class="flex justify-center">
           <button
@@ -52,25 +52,38 @@
       ></div>
 
       <section
-        id="tasks"
-        class="flex-col items-center justify-center w-1/2 my-16 mr-10 border border-blue-700 border-dashed"
+        class="flex flex-col items-center justify-center w-1/2 my-16 mr-10"
       >
         <div class="flex justify-center mt-2">
           <p class="text-5xl font-semibold">Tarefas</p>
         </div>
 
-        <div class="text-center border border-orange-700 border-solid my-7">
+        <div class="flex justify-center text-center mt-7 w-96">
           <input
+            id="new-task"
             type="text"
             name="task"
             placeholder="Insira uma tarefa"
-            class="font-thin text-black"
+            class="font-thin text-black bg-transparent outline-none w-96 placeholder:text-slate-600"
           />
+          <button
+            id="add-task"
+            class="inline-block w-6 h-6 rounded-full bg-sky-400"
+          >
+            +
+          </button>
         </div>
 
         <div
-          class="w-6/7 h-[400px] border border-solid border-emerald-700"
+          class="mt-1 border border-gray-100 border-solid w-96 opacity-80 rounded-xl"
         ></div>
+
+        <section class="flex items-center justify-center">
+          <ol
+            id="tasks"
+            class="my-9 w-96 h-[400px] rounded-md bg-slate-300"
+          ></ol>
+        </section>
       </section>
     </section>
   </body>
